@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register | Add New User</title>
+    <style type="text/css">
+		.register-form {
+			width: 300px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		.register-form h1 {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+		.register-form input{
+			width: 100%;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing:border-box;
+		}
+		.register-form input[type="submit"] {
+			width: 100%;
+			background-color: #535b63;
+			border: 0;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+    </style>
+</head>
+<body>
+    <div class="register-form">
+        <h1>Register Form</h1>
+        
+        <form action="/register" method="POST">
+            <!--<fieldset>-->
+                <label for="fullname">Fullname: </label>
+                <input type="text" name="fullname" required/>
+                <label for="username">Username: </label>
+                <input type="text" name="username" required/>
+                <label for="password">Password: </label>
+                <input type="password" name="password" required/>
+                <label for="email">Email: </label>
+                <input type="email" name="email" required/>
+            	<input type="submit" value="Submit">
+            <!--</fieldset>-->
+        </form>
+    </div>
+</body>
+</html>
